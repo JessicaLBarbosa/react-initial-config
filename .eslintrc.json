@@ -1,5 +1,7 @@
 {
-  "extends": "standard-with-typescript",
+  "extends": [
+    "standard-with-typescript"
+  ],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
@@ -7,6 +9,8 @@
     "import-helpers"
   ],
   "rules": {
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
     "import-helpers/order-imports": [
       "warn",
       { // example configuration
